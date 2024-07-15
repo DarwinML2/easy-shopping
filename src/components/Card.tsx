@@ -205,12 +205,12 @@ const foods = [
 ]
 export default function Card() {
   return (
-    <article className='mt-4 mx-6'>
-      <ul className='grid grid-cols-2 xl:grid-cols-8 md:grid-cols-4 sm:grid-cols-3 mx-auto'>
+    <article className='mx-6'>
+      <ul className='grid grid-cols-1 xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 mx-auto gap-y-4'>
         {foods.map(({ title, icon, price }) => (
           <li
             key={title}
-            className='flex flex-col justify-center mt-4 gap-y-4 p-2 border-2 border-slate-200 size-[180px] hover:bg-gray-300 rounded-xl'
+            className='flex flex-col justify-center gap-y-4 p-2 border-2 border-slate-200 size-[180px] hover:bg-gray-300 rounded-xl md:mx-6 sm:mx-2'
           >
             <h2 className='text-lg font-semibold'>{title}</h2>
             <div className='mt-auto mx-auto'>{icon} </div>
